@@ -43,7 +43,7 @@ body {
     color: gray;
 }
 
-.text {
+.title {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 50px;
@@ -52,6 +52,46 @@ body {
     color: #ffffff;
     padding: 10px 0px;
     text-align: center;
+}
+.text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    padding: 10px 0px;
+    text-align: left;
+}
+
+.text a {
+    color: #ffffff;
+}
+
+.text a:hover {
+    color: gray;
+}
+
+.text h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    padding: 10px 0px;
+    text-align: left;
+}
+
+.text h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    padding: 10px 0px;
+    text-align: left;
 }
 .my_img {
     text-align: center;
