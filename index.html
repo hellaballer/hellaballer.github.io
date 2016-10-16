@@ -8,6 +8,13 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script>
+        function preloadImage(url) {
+            var img = new Image();
+            img.src = url;
+        }
+
+        preloadImage("img/base.png");
+        preloadImage("img/talk.png");
         var audio = new Audio('music/hellaballerdotio.mp3');
 
         function hella_baller_play() {
@@ -19,13 +26,7 @@
             document.getElementById("head").style.background = "url(img/base.png) no-repeat";
         }
 
-        function preloadImage(url) {
-            var img = new Image();
-            img.src = url;
-        }
 
-        preloadImage("img/base.png");
-        preloadImage("img/talk.png");
 
     </script>
 </head>
