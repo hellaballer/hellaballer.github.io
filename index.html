@@ -18,26 +18,20 @@
         var audio = new Audio('music/hellaballerdotio.mp3');
 
         function hella_baller_play() {
-            document.getElementById("head").style.background = "url(img/talk.png) no-repeat";
+            document.getElementById("head").src = "img/talk.png";
             audio.play();
         }
 
         function hella_baller_stop() {
-            document.getElementById("head").style.background = "url(img/base.png) no-repeat";
+            document.getElementById("head").src = "img/base.png";
         }
-
-
-
     </script>
 </head>
 
 <body>
 
-    <div class="container">
-        <div id="head" class="base_image centered" onmouseover="hella_baller_play()" onmouseout="hella_baller_stop()"></div>
-
-        <!-- <img class="my_img" id="my_img" src="img/base.png" onmouseover="hella_baller_play()" onmouseout="hella_baller_stop()" alt="Talking Head"> -->
-        <!-- <div class="talking_head" onmouseover="hella_baller_play()" onmouseout="hella_baller_stop()"></div> -->
+    <div class="container centered">
+        <img id="head" src="./img/base.png" alt="Da Deer" onmouseover="hella_baller_play()" onmouseout="hella_baller_stop()" title="Deer Lord, it's a talking deer!">
         <p class="text">HellaBaller.io</p>
         <div class="media">
             <a href="https://github.com/hellaballer"><i class="fa fa-github fa-2x"></i><span>HellaBaller</span></a>

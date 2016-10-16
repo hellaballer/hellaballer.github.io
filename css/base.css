@@ -9,12 +9,11 @@ body {
 
 .centered {
     margin: 0 auto;
+    text-align: center;
 }
 
-.base_image {
-    width: 364px;
-    height: 720px;
-    background: url(../img/base.png) no-repeat;
+#head {
+  height: 70%;
 }
 
 /* media */
