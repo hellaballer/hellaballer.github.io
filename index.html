@@ -1,6 +1,29 @@
 <html>
-  <head></head>
-  <body>
-    Hello world!
-  </body>
+
+<head>
+    <link href="base.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        var audio = new Audio('music/hellaballerdotio.mp3');
+
+        function hella_baller_play() {
+            document.getElementById("my_img").src = "img/talk.png";
+            audio.play();
+        }
+
+        function hella_baller_stop() {
+            document.getElementById("my_img").src = "img/base.png";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <img class="my_img" id="my_img" src="img/base.png" onmouseover="hella_baller_play()" onmouseout="hella_baller_stop()" alt="Talking Head">
+        <p class="text">HellaBaller.io</p>
+    </div>
+</body>
+
 </html>
