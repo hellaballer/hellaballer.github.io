@@ -1,7 +1,9 @@
 <html>
 
 <head>
-    <link href="base.css" rel="stylesheet">
+    <title>HellaBaller.io</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -9,20 +11,36 @@
         var audio = new Audio('music/hellaballerdotio.mp3');
 
         function hella_baller_play() {
-            document.getElementById("my_img").src = "img/talk.png";
+            document.getElementById("head").style.background = "url(img/talk.png) no-repeat";
             audio.play();
         }
 
         function hella_baller_stop() {
-            document.getElementById("my_img").src = "img/base.png";
+            document.getElementById("head").style.background = "url(img/base.png) no-repeat";
         }
+
+        function preloadImage(url) {
+            var img = new Image();
+            img.src = url;
+        }
+
+        preloadImage("img/talk.png");
     </script>
 </head>
 
 <body>
+
     <div class="container">
-        <img class="my_img" id="my_img" src="img/base.png" onmouseover="hella_baller_play()" onmouseout="hella_baller_stop()" alt="Talking Head">
+        <div id="head" class="base_image centered" onmouseover="hella_baller_play()" onmouseout="hella_baller_stop()"></div>
+
+        <!-- <img class="my_img" id="my_img" src="img/base.png" onmouseover="hella_baller_play()" onmouseout="hella_baller_stop()" alt="Talking Head"> -->
+        <!-- <div class="talking_head" onmouseover="hella_baller_play()" onmouseout="hella_baller_stop()"></div> -->
         <p class="text">HellaBaller.io</p>
+        <div class="media">
+            <a href="https://github.com/hellaballer"><i class="fa fa-github fa-2x"></i><span>HellaBaller</span></a>
+            <a href="about.html"><i class="fa fa-file-text fa-2x"></i><span>About</span></a>
+            <a href="portfolio.html"><i class="fa fa-folder-open fa-2x"></i><span>Portfolio</span></a>
+        </div>
     </div>
 </body>
 
